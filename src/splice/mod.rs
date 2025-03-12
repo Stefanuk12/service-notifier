@@ -8,7 +8,7 @@ const JSON_STRING: &str = r#"{"operationName":"PacksSearch","variables":{"limit"
 
 pub struct SpliceListener {
     client: Client,
-    recent_uuids: CircularBuffer<String, 5>,
+    recent_uuids: CircularBuffer<String, 15>,
 }
 impl SpliceListener {
     /// Create a new [SpliceListener].
